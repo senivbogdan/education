@@ -1,7 +1,6 @@
 function sumCheck(a, b) {
-  let num = 2
   try {
-      if (typeof a === typeof num && typeof b === typeof num) {
+      if (typeof a === "number" && typeof b === "number") {
           return a + b
       }
       throw new Error("Wrong arguments type!")

@@ -1,14 +1,13 @@
 function factorial(n) {
-  let result = 1
-  
-  for (let i = 1; i <= n;i++) {
-    
-    result = result * i
-    
+  if (n == 1) {
+    return n
+  }else{
+    return n * factorial(n - 1)
   }
-  return result
-
 }
+
+
+
 window.factorial = factorial;
 
 export default factorial;

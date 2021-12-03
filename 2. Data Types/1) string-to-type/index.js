@@ -15,8 +15,6 @@ function stringToType(str) {
     }
       break
   }
-  // let kek = JSON.parse(str)
-  // if (typeof kek === "number") return kek
 }
 
 window.stringToType = stringToType;

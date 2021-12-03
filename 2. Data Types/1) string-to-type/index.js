@@ -13,7 +13,6 @@ function stringToType(str) {
     default : {
       return isNaN(str) ? str : Number(str)
     }
-      break
   }
 }
 

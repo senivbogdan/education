@@ -1,6 +1,6 @@
 function asyncSum(a, b){
     return new Promise(((resolve, reject) => {
-        if (typeof a !== "number" || typeof b !== 'number'){
+        if (typeof a !== "number" || typeof b !== "number"){
             reject(new Error())
         } else setTimeout(() => resolve(a + b),1000)
     }))

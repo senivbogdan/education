@@ -7,7 +7,7 @@ function xhrGet(url) {
         xhr.send()
         if (xhr.status >= 400) {
             reject(xhr.response)
-        } else resolve(xhr.response)
+        } else {resolve(xhr.response)}
     })
 }
 

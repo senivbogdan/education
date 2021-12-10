@@ -13,12 +13,12 @@ addButton.addEventListener("click", function () {
 
 function displayMessages() {
     const count = todoList.length
-    const inpute = document.createElement("input")
+    const newInput = document.createElement("input")
     const last = todoList[todoList.length - 1]
         if (last.todo === "555") {
-            inpute.value = "---"
+            newInput.value = "---"
         }else {
-            inpute.value = count % 2 === 0 ? last.todo.toUpperCase() : last.todo.toLowerCase()
+            newInput.value = count % 2 === 0 ? last.todo.toUpperCase() : last.todo.toLowerCase()
         }
-      createTo.append(inpute)
+      createTo.append(newInput)
 }
